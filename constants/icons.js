@@ -23,6 +23,12 @@ import languageFeed from "../assets/icons/languageFeed.png";
 import work from "../assets/icons/work.png";
 import university from "../assets/icons/university.png";
 import relationship from "../assets/icons/relationship.png";
+import rejection from "../assets/icons/rejection.png";
+import message from "../assets/icons/message.png";
+import nextButton from "../assets/icons/nextButton.png";
+
+
+
 
 
 
@@ -56,5 +62,7 @@ export default {
   work,
   university,
   relationship,
-
+  rejection,
+  message,
+  nextButton,
 };

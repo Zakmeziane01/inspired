@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useRouter } from "expo-router";
 import * as ImagePicker from "expo-image-picker";
 import { SafeAreaView } from 'react-native-safe-area-context';
-import * as FileSystem from 'expo-file-system';
 import {
     View,
     Text,
@@ -126,7 +125,7 @@ const uploadPhoto = () => {
                 </View>
               )}
 
-            </TouchableOpacity>
+       </TouchableOpacity>
 
             
             <View className="w-full justify-center min-h-[40vh] px-3 flex-1">

@@ -59,22 +59,17 @@ const UploadDocumentPage = () => {
       if (links) {
         // Update user's attribute with the uploaded link
         await updateUserAttribute(user.userId, 'links', links);
-        // Confirm success to the user
-        Alert.alert("Link Uploaded", `You have uploaded: ${links}`);
         setLink(''); // Clear the input after upload
       } else {
         Alert.alert("Error", "Please enter a valid link.");
         return;
       }
-
-      console.log("Upload success", files, links);
       router.push('/allowNotification');
     } catch (error) {
       console.error("Upload failed", error);
       Alert.alert(
         "Upload Failed",
         "Failed to upload the files or link. Please try again.",
-        [{ text: "OK" }]
       );
     } finally {
       setUploading(false);

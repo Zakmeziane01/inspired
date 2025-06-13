@@ -14,7 +14,7 @@ export default function  App() {
   
   const { loading, isLogged } = useGlobalContext();
 
-  if (!loading && isLogged) return <Redirect href="/uploadPhoto" />;
+  if (!loading && isLogged) return <Redirect href="/sign-in" />;
 
 
   return (
@@ -54,7 +54,7 @@ export default function  App() {
            <View className="w-full justify-center px-3 flex-1 mt-2">
            <CustomButton
              title="Ready to start"                                                  // This sets the button's label to "Continue with Email".
-             handlePress={() => router.push("/sign-in")}                             //This is an empty function that will handle the button press event.
+             handlePress={() => router.push("/careerPath")}                             //This is an empty function that will handle the button press event.
              containerStyles="w-full mt-7 font-psemibold bg-secondary-200"
              textStyles="text-white"
             /> 
